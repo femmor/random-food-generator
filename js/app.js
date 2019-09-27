@@ -29,7 +29,7 @@ const createMeal = meal => {
 
   const newInnerHTML = `
 		<div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 mt-2 mb-4">
             <div class="card">
             <img src="${meal.strMealThumb}" class='img-fluid' alt="Meal Image">
             <div class="card-body">
@@ -57,14 +57,14 @@ const createMeal = meal => {
                 </ul>
                 
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-7 mt-2 mb-4">
 				<h4>${meal.strMeal}</h4>
                 <p>${meal.strInstructions}</p>
                 <hr>
                 ${
                   meal.strYoutube
                     ? `
-                <h4>Video Recipe</h4>
+                <h4 class="mt-3">Video Recipe</h4>
                 <div class="videoWrapper">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${meal.strYoutube.slice(
                       -11
